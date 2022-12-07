@@ -11,5 +11,5 @@ jobs:
       - name: Run dasel
         run: |
           ./dasel put -t string -f example.yaml -s 'some.path' -v myvalue \ 
-          ./dasel -f config.yaml -s 'some.path' \ 
-          ./dasel -f config.yaml
+          ./dasel -f example.yaml -s 'some.path' \ 
+          ./dasel -f example.yaml
