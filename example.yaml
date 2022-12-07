@@ -1,0 +1,4 @@
+some:
+  path: "old value"
+  other:
+    path: "some other path"
