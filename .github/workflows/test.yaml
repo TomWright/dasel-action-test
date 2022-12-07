@@ -10,6 +10,6 @@ jobs:
         run: curl -sSLf "$(curl -sSLf https://api.github.com/repos/tomwright/dasel/releases/latest | grep browser_download_url | grep linux_amd64 | grep -v .gz | cut -d\" -f 4)" -L -o dasel && chmod +x dasel
       - name: Run dasel
         run: |
-          dasel put -t string -f example.yaml -s 'some.path' -v myvalue \ 
-          dasel -f config.yaml -s 'some.path' \ 
-          dasel -f config.yaml
+          ./dasel put -t string -f example.yaml -s 'some.path' -v myvalue \ 
+          ./dasel -f config.yaml -s 'some.path' \ 
+          ./dasel -f config.yaml
